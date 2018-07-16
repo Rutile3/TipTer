@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // アセンブリに関連付けられている情報を変更するには、
 // これらの属性値を変更してください。
 [assembly: AssemblyTitle("TipTer")]
-[assembly: AssemblyDescription("1行の先端と終端に文字列を挿入するスーツ")]
+[assembly: AssemblyDescription("1行の先端と終端に文字列を挿入するツール")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("TipTer")]
