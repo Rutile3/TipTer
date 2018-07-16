@@ -28,8 +28,9 @@ namespace TipTer {
         }
 
         private void insertButton_Click(object sender, EventArgs e) {
-            if (firstTextBox.Text == "" || lastTextBox.Text == "")
-                return;
+            if (targetTextBox.Text == "" ||
+               (firstTextBox.Text == "" && lastTextBox.Text == ""))
+                return;//未入力時は即リターン
 
             String[] split_string = {"\r\n"};
             String[] rows = targetTextBox.Text.Split(split_string, StringSplitOptions.None);
@@ -41,8 +42,8 @@ namespace TipTer {
                 else
                     result.AppendLine(firstTextBox.Text + row + lastTextBox.Text);
             }
-            //ややこしいが、最終行が空白の場合は改行しないようにしてます
-            targetTextBox.Text = result.Remove(result.Length - 5, 4).ToString();
+            //ややこしいが、最終行で改行しないようにしてます
+            targetTextBox.Text = result.Remove(result.Length - 2, 2).ToString();
         }
     }
 }
