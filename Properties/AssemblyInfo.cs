@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("TipTer")]
 [assembly: AssemblyDescription("1行の先端と終端に文字列を挿入するツール")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Rutile3")]
 [assembly: AssemblyProduct("TipTer")]
 [assembly: AssemblyCopyright("Copyright ©  Rutile3 2018")]
 [assembly: AssemblyTrademark("")]
