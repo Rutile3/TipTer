@@ -32,11 +32,11 @@ namespace TipTer {
                (firstTextBox.Text == "" && lastTextBox.Text == ""))
                 return;//未入力時は即リターン
 
-            String[] split_string = {"\r\n"};
-            String[] rows = targetTextBox.Text.Split(split_string, StringSplitOptions.None);
+            string[] split_string = {"\r\n"};
+            string[] rows = targetTextBox.Text.Split(split_string, StringSplitOptions.None);
             StringBuilder result = new StringBuilder();
 
-            foreach (String row in rows){
+            foreach (string row in rows){
                 if (row == "")//空白の行を飛ばす
                     result.AppendLine(row);
                 else
